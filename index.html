@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="ZIKRbAgCIkpnGDstns2HczgLqklEb0ZBFSkoljZPqIo" />
+    
+    <!-- SEO para o Google -->
+    <title>TP tec - Ferramentas Online & Criação de Sites</title>
+    <meta name="description" content="Portal oficial de ferramentas gratuitas como separador de PDF e serviços profissionais de criação de sites personalizados.">
+    <meta name="keywords" content="separar pdf, ferramentas online, criacao de sites, orcamento site, tp tec">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Tela de Carregamento Inicial -->
+    <div id="page-loader">
+        <div class="spinner-orange"></div>
+        <p>Carregando Portal...</p>
+    </div>
+
+    <!-- Cabeçalho com Logo e Botão de Orçamento -->
+    <header class="top-header">
+        <div class="header-content">
+            <div class="logo-wrapper">
+                <img src="logo.png" alt="Logo TP tec" class="header-logo" onerror="this.style.display='none'">
+                <div class="logo-text">TP tec <span class="badge-pro">Portal</span></div>
+            </div>
+            <button class="btn-budget-header" id="open-budget-modal">💻 Orçamento / Criar Site</button>
+        </div>
+    </header>
+
+    <!-- Banner Adsterra Topo -->
+    <div class="ad-container">
+        <script>
+            atOptions = {
+                'key' : '66e510cf5fb42ab9066b080fb8c48c2e',
+                'format' : 'iframe',
+                'height' : 90,
+                'width' : 728,
+                'params' : {}
+            };
+        </script>
+        <script src="https://www.highperformanceformat.com/66e510cf5fb42ab9066b080fb8c48c2e/invoke.js"></script>
+    </div>
+
+    <!-- Área Principal com Galerias e Anúncios Limítrofes -->
+    <main class="container">
+        
+        <!-- Anúncio Lateral Esquerdo -->
+        <div class="side-ad left-ad">
+            <script>
+                atOptions = {
+                    'key' : '2cadcec815b23b9842036a54bca5bd9c',
+                    'format' : 'iframe',
+                    'height' : 250,
+                    'width' : 300,
+                    'params' : {}
+                };
+            </script>
+            <script src="https://www.highperformanceformat.com/2cadcec815b23b9842036a54bca5bd9c/invoke.js"></script>
+        </div>
+
+        <!-- Conteúdo Principal do Portal (Formato Galeria Compacto) -->
+        <div class="portal-main-box">
+            
+            <div class="portal-intro">
+                <h1>Soluções e Ferramentas Web</h1>
+                <p>Selecione abaixo uma categoria e utilize nossas ferramentas rápidas direto no navegador.</p>
+            </div>
+
+            <!-- SEÇÃO 1: FERRAMENTAS DE PDF -->
+            <section class="tool-section">
+                <h2 class="section-title">📂 Ferramentas de PDF</h2>
+                <div class="tools-grid">
+                    
+                    <a href="https://tptecferramentas.github.io/separador-pdf/" class="tool-card" target="_blank">
+                        <div class="card-icon">✂️📄</div>
+                        <div class="card-content">
+                            <h3>Separador de PDF</h3>
+                            <p>Filtre e extraia páginas de arquivos PDF por palavra-chave com precisão.</p>
+                        </div>
+                        <span class="card-action-btn">Acessar 🚀</span>
+                    </a>
+
+                </div>
+            </section>
+
+            <!-- SEÇÃO 2: FERRAMENTAS DE IMAGEM -->
+            <section class="tool-section">
+                <h2 class="section-title">🖼️ Ferramentas de Imagem</h2>
+                <div class="tools-grid">
+                    
+                    <div class="tool-card disabled-card">
+                        <div class="card-icon">🎨📷</div>
+                        <div class="card-content">
+                            <h3>Otimizador de Imagem</h3>
+                            <p>Compacte, redimensione e converta imagens com alta qualidade.</p>
+                        </div>
+                        <span class="badge-soon">Em Breve ⏳</span>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Anúncio Lateral Direito -->
+        <div class="side-ad right-ad">
+            <script>
+                atOptions = {
+                    'key' : '2cadcec815b23b9842036a54bca5bd9c',
+                    'format' : 'iframe',
+                    'height' : 250,
+                    'width' : 300,
+                    'params' : {}
+                };
+            </script>
+            <script src="https://www.highperformanceformat.com/2cadcec815b23b9842036a54bca5bd9c/invoke.js"></script>
+        </div>
+
+    </main>
+
+    <!-- Modal de Criação de Sites e Orçamentos -->
+    <div id="budget-modal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-modal" id="close-budget">&times;</span>
+            <h2>💻 Criação de Sites & Orçamentos</h2>
+            <p class="modal-subtitle">Gostaria de um site profissional como este ou totalmente personalizado para o seu negócio?</p>
+            
+            <form id="contact-form" class="budget-form">
+                <!-- Configurações Ocultas para o FormSubmit (Assunto "Criação de sites") -->
+                <input type="hidden" name="_subject" value="Criação de sites">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                
+                <div class="form-group">
+                    <label for="contato-nome">Seu Nome*</label>
+                    <input type="text" id="contato-nome" name="nome" required placeholder="Como podemos te chamar?">
+                </div>
+
+                <div class="form-group">
+                    <label for="contato-email">Seu E-mail (Obrigatório)*</label>
+                    <input type="email" id="contato-email" name="email" required placeholder="exemplo@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="contato-zap">Seu WhatsApp (Opcional)</label>
+                    <input type="tel" id="contato-zap" name="whatsapp" placeholder="(00) 00000-0000">
+                </div>
+
+                <div class="form-group">
+                    <label for="contato-msg">Como você imagina o seu site? Descreva sua ideia:*</label>
+                    <textarea id="contato-msg" name="mensagem" rows="4" required placeholder="Quero um site para..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary" id="submit-btn">Enviar Solicitação de Orçamento</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 TP tec - Ferramentas & Soluções. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
